@@ -1,0 +1,13 @@
+spring:
+  messages:
+    basename: config.login  # 设置国际化配置文件路径
+  devtools:
+    restart:
+      enabled: true #  设置开启热部署
+  freemarker:
+    cache: false # 页面不加载缓存，修改后直接生效
+  thymeleaf:
+    cache: false  # 禁用thymeleaf页面缓存
+
+debug: true # 开启热部署
+
