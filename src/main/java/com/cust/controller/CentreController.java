@@ -1,5 +1,6 @@
 package com.cust.controller;
 
+import com.cust.exception.ExceptionTest;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -21,8 +22,17 @@ import java.util.Map;
 public class CentreController {
 
     @RequestMapping("/index")
-    public String hello() {
+    public String index() {
         return "index";
+    }
+
+    @ResponseBody
+    @RequestMapping("/hello")
+    public String hello(@RequestParam("param") String param) {
+        if (param.equals("aaa")) {
+            throw new ExceptionTest();
+        }
+        return "Hello World";
     }
 
     @PostMapping(value = "/user/login")
