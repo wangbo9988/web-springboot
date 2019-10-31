@@ -8,6 +8,16 @@ spring:
     cache: false # 页面不加载缓存，修改后直接生效
   thymeleaf:
     cache: false  # 禁用thymeleaf页面缓存
+  datasource: # 配置mysql
+    username: root
+    password: 123456
+    url: jdbc:mysql://127.0.0.1:3308/wangbo
+    driver-class-name: com.mysql.jdbc.Driver
+    schema:
+      - classpath:test01.sql
+      - classpath:test02.sql
 
 #debug: true # 开启热部署
+
+
 
