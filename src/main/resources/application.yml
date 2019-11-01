@@ -1,9 +1,9 @@
 spring:
   messages:
     basename: config.login  # 设置国际化配置文件路径
-#  devtools:
-#    restart:
-#      enabled: true #  设置开启热部署
+  devtools:
+    restart:
+      enabled: true #  设置开启热部署
   freemarker:
     cache: false # 页面不加载缓存，修改后直接生效
   thymeleaf:
@@ -11,11 +11,12 @@ spring:
   datasource: # 配置mysql
     username: root
     password: 123456
-    url: jdbc:mysql://127.0.0.1:3308/wangbo
-    driver-class-name: com.mysql.jdbc.Driver
-    schema:
-      - classpath:test01.sql
-      - classpath:test02.sql
+    url: jdbc:mysql://192.168.31.111:3308/wangbo
+    driver-class-name: com.mysql.cj.jdbc.Driver
+#    schema:
+#      - classpath:test01.sql
+#      - classpath:test02.sql
+#    initialization-mode: always
 
 #debug: true # 开启热部署
 
