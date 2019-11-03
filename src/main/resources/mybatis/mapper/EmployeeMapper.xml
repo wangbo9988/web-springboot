@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--    namesapce的值要与mapper文件夹中的接口绑定-->
+<mapper namespace="com.cust.mapper.EmployeeMapper">
+
+    <!--    public Employees getEmployeeById(Integer id);-->
+    <select id="getEmployeeById" resultType="com.cust.bean.Employees">
+        select * from Employees where id = #{id}
+    </select>
+</mapper>

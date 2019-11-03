@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- * @Description 测试注解版Mapper
+ * @Description 注解版Mybatis测试
  * @Author Wangbo
  * @Date 2019/11/03
  * @Version V1.0
@@ -26,5 +26,4 @@ public class DeptController {
     public Department getDepartment(@PathVariable("id") Integer id) {
         return departmentMapper.getDepartmentById(id);
     }
-
 }
