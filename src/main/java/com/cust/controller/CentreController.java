@@ -39,8 +39,8 @@ public class CentreController {
     public String Login(@RequestParam("loginUsername") String loginUsername, @RequestParam("loginPassword") String loginPassword, Map<String, Object> map, HttpSession session) {
         if ("admin".equals(loginUsername) && "123456".equals(loginPassword)) {
             session.setAttribute("loginUser", loginUsername);
-//            return "redirect:/index";
-            return "success";
+            return "redirect:/index";
+//            return "success";
         } else {
             map.put("msg", "用户名密码错误");
             return "login";
