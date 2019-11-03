@@ -16,7 +16,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * @Description
+ * @Description Druid数据源的相关配置类
  * @Author Wangbo
  * @Date 2019/11/03
  * @Version V1.0
