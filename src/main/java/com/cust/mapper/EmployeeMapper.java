@@ -1,7 +1,6 @@
 package com.cust.mapper;
 
-import com.cust.bean.Employees;
-import org.apache.ibatis.annotations.Mapper;
+import com.cust.entity.Employees;
 
 /**
  * @Description 通过映射文件的方式实现Mybatis操作数据库

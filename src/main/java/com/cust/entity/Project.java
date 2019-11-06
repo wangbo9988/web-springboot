@@ -1,4 +1,4 @@
-package com.cust.bean;
+package com.cust.entity;
 
 /**
  * @Description 项目信息表

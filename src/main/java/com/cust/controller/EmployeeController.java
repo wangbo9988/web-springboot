@@ -1,6 +1,6 @@
 package com.cust.controller;
 
-import com.cust.bean.Employees;
+import com.cust.entity.Employees;
 import com.cust.mapper.EmployeeMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;

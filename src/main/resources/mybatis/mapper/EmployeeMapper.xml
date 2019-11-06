@@ -6,7 +6,7 @@
 <mapper namespace="com.cust.mapper.EmployeeMapper">
 
     <!--    public Employees getEmployeeById(Integer id);-->
-    <select id="getEmployeeById" resultType="com.cust.bean.Employees">
+    <select id="getEmployeeById" resultType="com.cust.entity.Employees">
         select * from Employees where id = #{id}
     </select>
 </mapper>

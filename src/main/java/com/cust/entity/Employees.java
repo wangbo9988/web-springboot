@@ -1,4 +1,4 @@
-package com.cust.bean;
+package com.cust.entity;
 
 /**
  * @Description 员工信息表

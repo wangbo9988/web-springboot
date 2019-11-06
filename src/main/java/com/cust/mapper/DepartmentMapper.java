@@ -1,6 +1,6 @@
 package com.cust.mapper;
 
-import com.cust.bean.Department;
+import com.cust.entity.Department;
 import org.apache.ibatis.annotations.*;
 
 /**
