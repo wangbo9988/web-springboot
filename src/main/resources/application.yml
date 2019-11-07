@@ -41,16 +41,22 @@ spring:
       useGlobalDataSourceStat: true
   #      web-stat-filter:
   #          enabled: false
-#    schema:
-#      - classpath:test01.sql
-#      - classpath:test02.sql
-#    initialization-mode: always
+  #    schema:
+  #      - classpath:test01.sql
+  #      - classpath:test02.sql
+  #    initialization-mode: always
+
+  #  设置jpa的相关配置
+  jpa:
+    hibernate:
+      ddl-auto: update  # 定义数据表的生成策略
+    show-sql: true  # 设置控制台显示每次操作生成的SQL语句
 
 #debug: true # 开启热部署
 
 # mybatis的相关配置
 mybatis:
-#  注册mybatis全局配置文件的路径
+  #  注册mybatis全局配置文件的路径
   config-location: classpath:mybatis/mybatis-config.xml
-#  注册mybatis的mapper接口映射文件的路径
+  #  注册mybatis的mapper接口映射文件的路径
   mapper-locations: classpath:mybatis/mapper/*.xml
